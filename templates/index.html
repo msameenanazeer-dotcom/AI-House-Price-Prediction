@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>🏠 AI House Price Predictor</h1>
+
+<form method="POST">
+
+<input type="number"
+       name="area"
+       placeholder="House area in sq.ft"
+       required>
+
+<button type="submit">Predict Price</button>
+
+</form>
+
+{% if prediction %}
+<h2>Estimated Price: ₹{{ prediction }} Lakhs</h2>
+{% endif %}
+
+</div>
+
+</body>
+</html>
